@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.jpg";
 import { useId } from "react";
+import { Menu } from "lucide-react";
 
 const Nav = () => {
   const navItem = [
@@ -32,20 +33,20 @@ const Nav = () => {
   const id = useId();
   return (
     <>
-      <div className="w-full flex justify-center gap-20 p-2">
-        <div className="">
-          <img src={logo} alt="" />
-        </div>
-        <div className="flex gap-4 items-center">
-          <h2 className="bg-red-500 p-2">Home</h2>
-          {navItem.map((item) => (
-            <h2 className="text-lg hover:bg-gray-100 " key={item.id}>
-              {item.content}
-            </h2>
-          ))}
-        </div>
-      </div>
       <div className="w-full">
+        <div className="flex items-center justify-center p-2 space-x-5 lg:space-x-10">
+          <div>
+            <img src={logo} alt="" className="w-[70px]" />
+          </div>
+          <div className="flex invisible lg:visible lg:space-x-10">
+            {navItem.map((item) => (
+              <h2 key={id}>{item.content}</h2>
+            ))}
+          </div>
+          <div className="lg:invisible">
+            <Menu />
+          </div>
+        </div>
         <marquee behavior="" direction="" className="text-xl text-blue-500">
           Freelance/Franchise/Reseller Required in all major cities
         </marquee>

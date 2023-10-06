@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="w-full">
+    <div className="w-full p-0">
       <div className="">
         <h1 className="text-center text-4xl mt-10">
           <span className="text-red-600">--</span>
@@ -10,8 +10,8 @@ const About = () => {
           <span className="text-red-600 ">--</span>
         </h1>
       </div>
-      <div className="px-[200px] w-full">
-        <h1 className="text-2xl mt-12">
+      <div className="w-full p-5 lg:px-[100px]">
+        <h1 className="text-2xl mt-12 w-full ">
           <span className="border-b-2 border-red-500">ANDI</span> software
           solutions makes technology and information work for business :
         </h1>

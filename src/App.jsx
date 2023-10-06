@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Carousal from "./components/Carousal";
 import Chat from "./components/Chat";
 import Contact from "./components/Contact";
 
@@ -14,7 +13,7 @@ function App() {
       <Nav />
       <Hero />
       <About />
-      <Chat />
+      {/* <Chat /> */}
       <Contact />
     </>
   );
